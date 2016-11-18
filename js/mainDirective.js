@@ -1,0 +1,1 @@
+angular.module("name",[]).directive("name",function(){return{scope:!0,restrict:"E",link:function(e,t,l){e.fullName=l.first+" "+l.last},replace:!0,template:"<h1>{{fullName}}</h1>"}}),angular.module("namer",[]).directive("namer",function(){return{scope:{},restrict:"C",link:function(e,t,l){e.fullName=l.first+" "+l.last},template:"{{fullName}}"}});
